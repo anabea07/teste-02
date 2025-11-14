@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária HABITAR - Seu Novo Lar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Imobiliária HABITAR</h1>
+        <p>A chave para o seu imóvel ideal.</p>
+    </header>
+    <main>
+        <section class="filtros">
+            <h2>Filtro de Imóveis</h2>
+            <label for="tipo_imovel">Tipo:</label>
+            <select id="tipo_imovel" onchange="filtrarImoveis()">
+                <option value="todos">Todos</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+                <option value="terreno">Terreno</option>
+            </select>
+            <p>Imóveis Encontrados: <span id="contador_imoveis">3</span></p>
+        </section>
+
+        <section class="lista_imoveis">
+            <div class="imovel apartamento" id="imovel_1">
+                <h3>Apartamento Luxo</h3>
+                <p>3 quartos, 2 vagas. R$ 550.000</p>
+                <button onclick="destacarImovel('imovel_1')">Destacar</button>
+            </div>
+            <div class="imovel casa" id="imovel_2">
+                <h3>Casa de Campo</h3>
+                <p>4 quartos, 5 vagas. R$ 890.000</p>
+                <img src="https://projetaronline.com/wp-content/uploads/2025/04/P451-FOTOS_12-Foto.jpg" alt="minha imagem" width="300" height="200">
+                <button onclick="destacarImovel('imovel_2')">Destacar</button>
+            </div>
+            <div class="imovel terreno" id="imovel_3">
+                <h3>Terreno Urbano</h3>
+                <p>500m² no centro. R$ 320.000</p>
+                <button onclick="destacarImovel('imovel_3')">Destacar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Imobiliária Código Certo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
