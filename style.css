@@ -1,0 +1,24 @@
+/*ESTILO GERAL*/
+
+body{ 
+ background-color:bisque;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ h1 {
+    color: brown;
+}
+h3 {
+    color: brown;
+
+}
+h2 {
+    color: brown;
+
+}
+h4 {
+    color: brown;
+}
+.imagem {
+    border-radius: 40%;
+
+}
